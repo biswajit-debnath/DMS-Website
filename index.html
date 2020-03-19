@@ -21,6 +21,9 @@
   <!-- Animate on scroll -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style type="text/css"> 
+    html {
+      scroll-behavior: smooth !important;
+    }
     .ipad-img{
       width: 100%;
       transition: transform .6s .9s;
@@ -233,7 +236,7 @@
             <p style="font-size: 1.3rem; color: #bdb2b2;">Solution to all your need.</p>
           <br>
           <br>
-          <a href="#"  class="btn btn-success btn-raised btn-lg">
+          <a href="#main"  class="btn btn-success btn-raised btn-lg">
              Know More
           </a>
         </div>
@@ -241,7 +244,7 @@
       </div>
     </div>
   </div>
-   <div class="main main-raised pt-lg-3 pt-md-2" style="margin-bottom: -20px;">
+   <div class="main main-raised pt-lg-3 pt-md-2" style="margin-bottom: -20px;" id="main">
       <div class="container text-center">
         <div class="col-lg-8 col-md-12 m-auto">
           <h2 class="text-center font-weight-bold">Services</h2>
@@ -446,7 +449,7 @@
         <div class="row">
           <div class="col-lg-5 col-md-12 network" style="overflow: hidden;">
             <div class="image-container" data-aos="fade-right"  data-aos-easing="ease-out-back"
-     data-aos-duration="1800" style="max-width: 320px;">
+     data-aos-duration="1800" style="max-width: 350px;">
 <!--               <img class="ipad-img" src="assets/img/network2.svg" style="max-width: 350px;"> -->
             <svg width="100%" height="100%" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4.50001 8.99999C3.45887 8.99999 2.45 8.71918 1.64523 8.20553C0.84045 7.69179 0.289574 6.97693 0.0864719 6.1828C-0.116636 5.38858 0.040597 4.56422 0.531365 3.8501C1.02214 3.13597 1.81608 2.57629 2.77796 2.26642C3.73978 1.95655 4.81001 1.91565 5.80631 2.15071C6.80256 2.38577 7.66319 2.88223 8.24166 3.5555C8.82001 4.22877 9.08041 5.03721 8.9783 5.84306C8.87626 6.64891 8.41819 7.40224 7.682 7.97483C7.26512 8.30089 6.76916 8.55933 6.22302 8.73528C5.67682 8.91128 5.0912 9.00122 4.50001 8.99999ZM4.50001 2.0269C2.03779 2.0269 0.0345854 3.58492 0.0345854 5.49999C0.0345854 7.41502 2.03779 8.97306 4.50001 8.97306C6.96222 8.97306 8.96541 7.41502 8.96541 5.49999C8.96541 3.58492 6.96222 2.0269 4.50001 2.0269Z" fill="#CCCCCC"/>
@@ -781,6 +784,99 @@
   </div> 
 
 
+
+
+
+  
+<!-- //////////
+ -->
+<div class="contactus-1 section-image" style="background-image: url('./assets/img/banner.jpg')">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 class="title">Get in Touch</h2>
+              <h5 class="description">You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</h5>
+              <div class="info info-horizontal">
+                <div class="icon icon-primary">
+                  <i class="material-icons">pin_drop</i>
+                </div>
+                <div class="description">
+                  <h4 class="info-title">Find us at the office</h4>
+                  <p> Bld Mihail Kogalniceanu, nr. 8,
+                    <br> 7652 Bucharest,
+                    <br> Romania
+                  </p>
+                </div>
+              </div>
+              <div class="info info-horizontal">
+                <div class="icon icon-primary">
+                  <i class="material-icons">phone</i>
+                </div>
+                <div class="description">
+                  <h4 class="info-title">Give us a ring</h4>
+                  <p> Michael Jordan
+                    <br> +40 762 321 762
+                    <br> Mon - Fri, 8:00-22:00
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 ml-auto">
+              <div class="card card-contact">
+                <form id="contact-form" method="post">
+                  <div class="card-header card-header-raised card-header-primary text-center">
+                    <h4 class="card-title">Contact Us</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group label-floating is-empty bmd-form-group">
+                          <label class="bmd-label-floating">First name</label>
+                          <input type="text" name="name" class="form-control">
+                          <span class="material-input"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group label-floating is-empty bmd-form-group">
+                          <label class="bmd-label-floating">Last name</label>
+                          <input type="text" name="name" class="form-control">
+                          <span class="material-input"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group label-floating is-empty bmd-form-group">
+                      <label class="bmd-label-floating">Email address</label>
+                      <input type="email" name="email" class="form-control">
+                      <span class="material-input"></span>
+                    </div>
+                    <div class="form-group label-floating is-empty bmd-form-group">
+                      <label for="exampleMessage1" class="bmd-label-floating">Your Message</label>
+                      <textarea name="message" class="form-control" id="exampleMessage1" rows="6"></textarea>
+                      <span class="material-input"></span>
+                    </div>
+                  </div>
+                  <div class="card-footer justify-content-between">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value=""> I'm not a robot
+                        <span class="form-check-sign">
+                          <span class="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary pull-right">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- 
+      ///////// -->
+
+
   <footer class="footer footer-default" style="background-color: #333">
     <div class="container">
       <br>
@@ -822,7 +918,7 @@
   <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
   <script src="assets/js/plugins/moment.min.js"></script>
-  <!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
   <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
   <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
